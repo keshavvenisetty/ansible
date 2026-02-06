@@ -19,4 +19,4 @@
         duration: 8hrs
         trainer: shiva keyword
     ansible.builtin.debug:
-      msg: "Course info {{ course | List }}"  
+      msg: "Course info {{ course | dict2items }}"  
