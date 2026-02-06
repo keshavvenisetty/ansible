@@ -41,3 +41,9 @@
       IP: "300.489.555.367"    
     ansible.builtin.debug:
       msg: "is {{ IP | ansible.utils.ipaddr }}"
+
+  - name: check IP addres is valid or not
+    vars:
+      IP: "169.1.1.55"    
+    ansible.builtin.debug:
+      msg: "is {{ IP | ansible.utils.ipaddr }}"      
